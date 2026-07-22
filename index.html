@@ -13,13 +13,14 @@
   <meta name="twitter:description" content="Practical automation that works with the tools and processes your small team already uses.">
   <title>AI Automation for Small Businesses — FlowReady AI</title>
   <link rel="icon" type="image/webp" href="images/branding/favicon.webp">
+  <link rel="preload" as="image" href="images/home/hero-automation-workflow.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="config/config.js" defer></script>
   <script src="js/config-loader.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/vendor/lucide.min.js" defer></script><script src="js/main.js" defer></script><script src="js/icons.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-config="accessibility.skipLink">Skip to main content</a>
@@ -76,35 +77,63 @@
             <li>Designed for maintainability</li>
           </ul>
         </div>
-        <div class="hero-visual" data-reveal="right">
-          <div class="media-frame">
-            <img src="images/home/hero-automation-workflow.webp" alt="Small business owner working on a laptop with a subtle augmented-reality automation workflow" width="1730" height="909" fetchpriority="high" decoding="async">
-          </div>
-          <div class="floating-note">
+        <div class="floating-note hero-status" data-reveal="right">
             <strong>One connected workflow</strong>
             <span>Lead captured → qualified → followed up → organized</span>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="section home-process" aria-labelledby="process-title">
-      <div class="container home-process-grid">
-        <figure class="process-visual" data-reveal="left">
-          <div class="media-frame">
-            <img src="images/home/automation-audit-planning-v2.webp" alt="Two small-business colleagues reviewing a workflow map with subtle augmented-reality process markers" width="1440" height="901" loading="lazy" decoding="async">
+<section class="marquee-section" aria-labelledby="marquee-title">
+      <div class="container marquee-section__intro" data-reveal>
+        <div><span class="eyebrow">Built around real operations</span><h2 id="marquee-title">Different businesses. <span class="gradient-text">Different workflows.</span></h2></div>
+        <p>Automation should adapt to the customer journey, operating rhythm, information, and exceptions that make each business distinct.</p>
+      </div>
+
+      <div class="marquee marquee--forward" data-marquee aria-label="Industries served">
+        <div class="marquee-track"><div class="marquee-group">
+          <a class="marquee-word" href="industry-solutions.html">Professional Services</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="industry-solutions.html">Home Services</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="industry-solutions.html">Retail &amp; E-commerce</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="industry-solutions.html">Hospitality</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="industry-solutions.html">Property &amp; Real Estate</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="industry-solutions.html">Health &amp; Wellness</a><span class="marquee-separator" aria-hidden="true">✳</span>
+        </div></div>
+      </div>
+
+      <div class="marquee marquee--reverse" data-marquee aria-label="Automation workflow categories">
+        <div class="marquee-track"><div class="marquee-group">
+          <a class="marquee-word" href="lead-follow-up-automation.html">Lead Follow-Up</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="ai-customer-service.html">Customer Service</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="document-data-automation.html">Document Workflows</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="marketing-automation.html">Marketing Systems</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="ai-chat-assistants.html">Knowledge Assistants</a><span class="marquee-separator" aria-hidden="true">✳</span>
+          <a class="marquee-word" href="email-automation.html">Email Coordination</a><span class="marquee-separator" aria-hidden="true">✳</span>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section home-process" aria-labelledby="process-title" data-process-scroll>
+      <div class="home-process-sticky">
+        <div class="container home-process-grid">
+          <figure class="process-visual" data-reveal="left">
+            <div class="media-frame">
+              <img src="images/home/automation-audit-planning-v2.webp" alt="Two small-business colleagues reviewing a workflow map with subtle augmented-reality process markers" width="1440" height="901" loading="lazy" decoding="async">
+            </div>
+            <figcaption><strong>See the whole workflow</strong><span>People, tools, decisions, exceptions, and handoffs.</span></figcaption>
+          </figure>
+          <div class="process-editorial" data-reveal="right">
+            <div class="process-editorial__intro" data-process-intro>
+              <span class="eyebrow">A grounded process</span>
+              <h2 id="process-title">Start with the work, <span class="gradient-text">not the hype</span></h2>
+              <p class="lead">Automation should solve a clear operational problem and fit the way your team actually works.</p>
+            </div>
+            <ol class="process-steps" data-process-steps>
+              <li><span class="process-step-icon"><i data-lucide="route" aria-hidden="true"></i></span><div><h3>Map the routine</h3><p>Find the repeated handoffs, delays, duplicate entry, and hard-to-find information.</p></div></li>
+              <li><span class="process-step-icon"><i data-lucide="shield-check" aria-hidden="true"></i></span><div><h3>Design the safeguards</h3><p>Set approved sources, review points, exceptions, ownership, and a manual fallback.</p></div></li>
+              <li><span class="process-step-icon"><i data-lucide="chart-no-axes-combined" aria-hidden="true"></i></span><div><h3>Build, watch, improve</h3><p>Launch one focused workflow and refine it around evidence from the people using it.</p></div></li>
+            </ol>
           </div>
-          <figcaption><strong>See the whole workflow</strong><span>People, tools, decisions, exceptions, and handoffs.</span></figcaption>
-        </figure>
-        <div class="process-editorial" data-reveal="right">
-          <span class="eyebrow">A grounded process</span>
-          <h2 id="process-title">Start with the work, <span class="gradient-text">not the hype</span></h2>
-          <p class="lead">Automation should solve a clear operational problem and fit the way your team actually works.</p>
-          <ol class="process-steps">
-            <li><div><h3>Map the routine</h3><p>Find the repeated handoffs, delays, duplicate entry, and hard-to-find information.</p></div></li>
-            <li><div><h3>Design the safeguards</h3><p>Set approved sources, review points, exceptions, ownership, and a manual fallback.</p></div></li>
-            <li><div><h3>Build, watch, improve</h3><p>Launch one focused workflow and refine it around evidence from the people using it.</p></div></li>
-          </ol>
         </div>
       </div>
     </section>
@@ -116,35 +145,34 @@
           <p>Each solution is shaped around the tools, approval steps, and customer experience your business already has.</p>
         </div>
 
-        <div class="solution-showcase">
-          <article class="showcase-row" data-reveal>
-            <div class="showcase-media media-frame"><img src="images/home/lead-response-automation-v2.webp" alt="Small-business owner managing a new inquiry across phone and laptop with a subtle augmented-reality follow-up flow" width="1440" height="901" loading="lazy" decoding="async"></div>
-            <div class="showcase-copy">
-              <span class="showcase-index">01 / RESPONSE</span>
-              <h3>Never let a promising inquiry disappear into the inbox</h3>
-              <p>Capture the message, collect missing context, assign ownership, and keep the next appropriate action visible.</p>
-              <div class="link-cluster"><a href="lead-follow-up-automation.html">Lead Follow-Up <span aria-hidden="true">↗</span></a><a href="email-automation.html">Email Automation <span aria-hidden="true">↗</span></a></div>
+        <div class="solution-bento">
+          <article class="solution-bento__primary" data-reveal>
+            <img src="images/home/lead-response-automation-v2.webp" alt="Small-business owner managing a new inquiry across phone and laptop with a subtle augmented-reality follow-up flow" width="1440" height="901" loading="lazy" decoding="async">
+            <div class="solution-bento__primary-content">
+              <span class="solution-bento__label"><i data-lucide="zap" aria-hidden="true"></i> Lead and email automation</span>
+              <h3>Every new inquiry enters one visible response path</h3>
+              <p>Capture the message, request missing context, assign an owner, and keep the next useful action from depending on memory.</p>
+              <div class="solution-bento__actions"><a href="lead-follow-up-automation.html">Lead Follow-Up <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="email-automation.html">Email Automation <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
             </div>
           </article>
 
-          <article class="showcase-row showcase-row--reverse" data-reveal>
-            <div class="showcase-copy">
-              <span class="showcase-index">02 / ORGANIZE</span>
-              <h3>Turn questions and documents into work the team can act on</h3>
-              <p>AI can classify, summarize, extract, and draft—while uncertain or sensitive cases stay clearly routed to a person.</p>
-              <div class="link-cluster"><a href="ai-customer-service.html">Customer Service <span aria-hidden="true">↗</span></a><a href="document-data-automation.html">Document &amp; Data <span aria-hidden="true">↗</span></a></div>
-            </div>
-            <div class="media-stack" aria-label="Customer service and document automation scenes">
-              <div class="media-frame media-stack__primary"><img src="images/home/document-data-routing-v2.webp" alt="Operations professional checking extracted document data before human approval" width="1440" height="901" loading="lazy" decoding="async"></div>
-              <div class="media-frame media-stack__secondary"><img src="images/customer-service/ai-assisted-customer-support.webp" alt="Customer service specialist organizing messages with subtle augmented-reality assistance" width="1726" height="911" loading="lazy" decoding="async"></div>
-            </div>
+          <article class="solution-bento__tile" data-reveal>
+            <div class="solution-bento__tile-media"><img src="images/home/document-data-routing-v2.webp" alt="Operations professional checking extracted document data before human approval" width="1440" height="901" loading="lazy" decoding="async"></div>
+            <div class="solution-bento__tile-copy"><span><i data-lucide="files" aria-hidden="true"></i> Organized operations</span><h3>Document &amp; Data</h3><p>Extract, validate, and route information without hiding uncertain cases.</p><a href="document-data-automation.html" aria-label="Explore Document and Data Automation"><i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
+          </article>
+
+          <article class="solution-bento__tile" data-reveal>
+            <div class="solution-bento__tile-media"><img src="images/customer-service/ai-assisted-customer-support.webp" alt="Customer service specialist organizing messages with subtle augmented-reality assistance" width="1726" height="911" loading="lazy" decoding="async"></div>
+            <div class="solution-bento__tile-copy"><span><i data-lucide="messages-square" aria-hidden="true"></i> Better conversations</span><h3>AI for Customer Service</h3><p>Prepare consistent replies and route exceptions to the right person.</p><a href="ai-customer-service.html" aria-label="Explore AI for Customer Service"><i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
           </article>
         </div>
 
-        <div class="solution-directory" data-reveal>
-          <a href="ai-chat-assistants.html"><span>03</span><strong>AI Chat Assistants</strong><small>Focused help from approved knowledge</small><b aria-hidden="true">→</b></a>
-          <a href="marketing-automation.html"><span>04</span><strong>Marketing Automation</strong><small>Connected briefs, approvals, and follow-up</small><b aria-hidden="true">→</b></a>
-        </div>
+        <nav class="solution-switchboard" data-reveal aria-label="More automation solutions">
+          <div><span>Explore more</span><strong>Choose another workflow</strong></div>
+          <a href="ai-chat-assistants.html"><i data-lucide="bot" aria-hidden="true"></i><span><strong>AI Chat Assistants</strong><small>Grounded help from approved knowledge</small></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="marketing-automation.html"><i data-lucide="megaphone" aria-hidden="true"></i><span><strong>Marketing Automation</strong><small>Briefs, approvals, and follow-up</small></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="industry-solutions.html"><i data-lucide="workflow" aria-hidden="true"></i><span><strong>Industry Solutions</strong><small>Patterns shaped around real operations</small></span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </nav>
       </div>
     </section>
 
@@ -152,16 +180,26 @@
       <div class="container">
         <div class="home-workflow-head" data-reveal>
           <div><span class="eyebrow">Designed around your stack</span><h2 id="workflow-title">Connect what already works</h2></div>
-          <div><p>A useful automation often begins with the form, inbox, spreadsheet, calendar, CRM, or shared drive your team already understands.</p><ul class="inline-principles" aria-label="Workflow principles"><li>Keep useful tools</li><li>Add AI selectively</li><li>Preserve human review</li></ul></div>
+          <div class="home-workflow-context"><p>A useful automation often begins with the form, inbox, spreadsheet, calendar, CRM, or shared drive your team already understands.</p><ul class="inline-principles" aria-label="Workflow principles"><li><i data-lucide="folder-open" aria-hidden="true"></i><span>Keep useful tools</span></li><li><i data-lucide="sparkles" aria-hidden="true"></i><span>Add AI selectively</span></li><li><i data-lucide="shield-check" aria-hidden="true"></i><span>Preserve human review</span></li></ul></div>
         </div>
         <div class="workflow-panel workflow-panel--wide" data-reveal aria-label="Example automation workflow">
-          <div class="workflow-kicker"><span>LIVE WORKFLOW</span><small>One clear path with visible ownership</small></div>
-          <div class="workflow-line" aria-hidden="true"></div>
-          <div class="workflow-nodes">
-            <div class="workflow-node"><strong>Inquiry</strong><small>A form or message enters one queue.</small></div>
-            <div class="workflow-node"><strong>AI assist</strong><small>Information is classified and summarized.</small></div>
-            <div class="workflow-node"><strong>Human review</strong><small>A person approves exceptions or sensitive replies.</small></div>
-            <div class="workflow-node"><strong>Follow-through</strong><small>The next task, update, and reminder happen.</small></div>
+          <div class="workflow-kicker">
+            <div class="workflow-kicker__status"><i data-lucide="activity" aria-hidden="true"></i><span>Live workflow</span></div>
+            <div class="workflow-kicker__meta"><small>One clear path with visible ownership</small><span>Connected</span></div>
+          </div>
+          <div class="workflow-canvas">
+            <div class="workflow-line" aria-hidden="true"></div>
+            <div class="workflow-nodes">
+              <div class="workflow-node"><div class="workflow-node__heading"><span class="mini-icon" aria-hidden="true"></span><strong>Inquiry</strong></div><small>A form or message enters one queue.</small></div>
+              <div class="workflow-node"><div class="workflow-node__heading"><span class="mini-icon" aria-hidden="true"></span><strong>AI assist</strong></div><small>Information is classified and summarized.</small></div>
+              <div class="workflow-node"><div class="workflow-node__heading"><span class="mini-icon" aria-hidden="true"></span><strong>Human review</strong></div><small>A person approves exceptions or sensitive replies.</small></div>
+              <div class="workflow-node"><div class="workflow-node__heading"><span class="mini-icon" aria-hidden="true"></span><strong>Follow-through</strong></div><small>The next task, update, and reminder happen.</small></div>
+            </div>
+          </div>
+          <div class="workflow-panel__outcomes" aria-label="Workflow qualities">
+            <span><i data-lucide="route" aria-hidden="true"></i>One shared path</span>
+            <span><i data-lucide="user-check" aria-hidden="true"></i>Human checkpoint</span>
+            <span><i data-lucide="check-check" aria-hidden="true"></i>Every handoff recorded</span>
           </div>
         </div>
       </div>
@@ -186,23 +224,6 @@
       </div>
     </section>
 
-    <section class="section--tight marquee" aria-label="Industries served">
-      <div class="marquee-track">
-        <span class="marquee-item">Professional Services</span>
-        <span class="marquee-item">Home Services</span>
-        <span class="marquee-item">Retail &amp; E-commerce</span>
-        <span class="marquee-item">Hospitality</span>
-        <span class="marquee-item">Property &amp; Real Estate</span>
-        <span class="marquee-item">Health &amp; Wellness</span>
-        <span class="marquee-item" aria-hidden="true">Professional Services</span>
-        <span class="marquee-item" aria-hidden="true">Home Services</span>
-        <span class="marquee-item" aria-hidden="true">Retail &amp; E-commerce</span>
-        <span class="marquee-item" aria-hidden="true">Hospitality</span>
-        <span class="marquee-item" aria-hidden="true">Property &amp; Real Estate</span>
-        <span class="marquee-item" aria-hidden="true">Health &amp; Wellness</span>
-      </div>
-    </section>
-
     <section class="section home-guides" aria-labelledby="guides-title">
       <div class="container guide-editorial">
         <div class="guide-editorial__intro" data-reveal="left">
@@ -219,7 +240,7 @@
       </div>
     </section>
 
-    <section class="section section--surface" aria-labelledby="faq-title">
+    <section class="section section--surface home-faq" aria-labelledby="faq-title">
       <div class="container split">
         <div class="split-copy" data-reveal="left">
           <span class="eyebrow">Frequently asked</span>
