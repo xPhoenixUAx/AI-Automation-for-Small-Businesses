@@ -41,8 +41,7 @@
       toggle.setAttribute("aria-expanded", "true");
       toggle.setAttribute("aria-label", window.SiteConfig ? window.SiteConfig.value("accessibility.closeMenu") : "Close navigation menu");
       document.body.classList.add("menu-open");
-      const firstLink = nav.querySelector("a, button");
-      if (firstLink) firstLink.focus();
+      toggle.focus();
     }
 
     toggle.addEventListener("click", function () {
@@ -75,9 +74,10 @@
         else closeDropdowns();
       }
       if (event.key === "Tab" && nav.classList.contains("is-open")) {
-        const focusable = Array.from(nav.querySelectorAll('a[href], button:not([disabled])')).filter(function (element) {
+        const navFocusable = Array.from(nav.querySelectorAll('a[href], button:not([disabled])')).filter(function (element) {
           return !element.closest("[hidden]") && element.offsetParent !== null;
         });
+        const focusable = navFocusable.concat(toggle);
         if (!focusable.length) return;
         const first = focusable[0];
         const last = focusable[focusable.length - 1];

@@ -15,6 +15,17 @@
 @media (max-width: 74.9rem) {
   .menu-toggle {
     display: block;
+    z-index: 1301;
+  }
+
+  body.menu-open .menu-toggle {
+    position: fixed;
+    top: calc((var(--header-height) - 2.75rem) / 2);
+    left: min(18.25rem, calc(100vw - 6.75rem));
+    border-color: rgba(121, 242, 230, 0.34);
+    background: rgba(12, 20, 46, 0.96);
+    color: var(--text);
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.3), 0 0 1.25rem rgba(121, 242, 230, 0.08);
   }
 
   .site-nav {
@@ -270,8 +281,36 @@
 }
 
 @media (max-width: 47.9rem) {
+  html {
+    max-width: 100%;
+    overflow-x: clip;
+    background: var(--bg);
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
   :root {
     --header-height: 4.75rem;
+  }
+
+  [data-reveal="left"],
+  [data-reveal="right"] {
+    transform: translateY(1.5rem);
+  }
+
+  [data-reveal="left"].is-visible,
+  [data-reveal="right"].is-visible {
+    transform: none;
   }
 
   .container {
@@ -304,7 +343,9 @@
     right: auto;
     bottom: auto;
     width: min(100%, 22rem);
-    margin-top: 1.6rem;
+    justify-self: center;
+    margin: 1.6rem auto 0;
+    text-align: center;
   }
 
   .steps-grid,
