@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^robots\.txt$ seo-router.php?resource=robots [L,QSA]
+RewriteRule ^sitemap\.xml$ seo-router.php?resource=sitemap [L,QSA]
+RewriteRule ^site\.webmanifest$ seo-router.php?resource=manifest [L,QSA]
+RewriteRule ^$ seo-router.php?resource=page&page=index.html [L,QSA]
+RewriteRule ^([A-Za-z0-9-]+\.html)$ seo-router.php?resource=page&page=$1 [L,QSA]

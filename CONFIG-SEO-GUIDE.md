@@ -39,10 +39,10 @@ config/config.js
 
 ```js
 "site": {
-  "name": "Digital Assets Media",
-  "companyName": "Digital Assets Media",
-  "corporateEmail": "contact@digitalassetsmedia.com",
-  "websiteUrl": "https://digitalassetsmedia.com",
+  "name": "FlowReady AI",
+  "companyName": "FlowReady AI",
+  "corporateEmail": "hello@flowready.example",
+  "websiteUrl": "",
   "address": "",
   "companyId": ""
 }
@@ -103,6 +103,10 @@ window.SITE_CONFIG = Object.freeze({
 | `{companyName}` | `site.companyName`; якщо поле відсутнє, частини системи використовують назву сайту як fallback |
 | `{corporateEmail}` | `site.corporateEmail` |
 | `{websiteUrl}` | `site.websiteUrl` |
+| `{address}` | `site.address` |
+| `{companyId}` | `site.companyId` |
+| `{addressLine}` | Додає адресу разом із роздільником, лише коли адресу заповнено |
+| `{companyIdLine}` | Додає company ID разом із роздільником, лише коли ID заповнено |
 
 Наприклад:
 
@@ -308,7 +312,7 @@ Router перебирає `seo.pages` і для кожного запису ст
 Поле дати:
 
 ```js
-"lastModified": "2026-07-22"
+"lastModified": "2026-07-23"
 ```
 
 Формат — `YYYY-MM-DD`. Дату потрібно оновлювати після суттєвого оновлення контенту, а не при кожній технічній дрібниці.

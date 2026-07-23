@@ -1158,6 +1158,7 @@ a:focus-visible .icon-arrow {
 
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -1168,6 +1169,10 @@ a:focus-visible .icon-arrow {
 .footer-bottom p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+.footer-company-line {
+  color: var(--muted);
 }
 
 .footer-email {
